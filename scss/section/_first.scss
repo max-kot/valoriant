@@ -1,0 +1,127 @@
+.first {
+	padding: 50px 0;
+	&__body {
+		position: relative;
+		display: flex;
+	}
+
+	&__title {
+		font-family: "Druk Wide";
+		font-size: 100px;
+		line-height: calc(156 / 204 * 100%);
+		letter-spacing: 0.1em;
+		-webkit-text-stroke: 2px #fff;
+		-webkit-text-fill-color: transparent;
+		writing-mode: vertical-lr;
+		margin-left: 15%;
+		text-transform: uppercase;
+	}
+
+	&__swiper {
+	}
+}
+.first-swiper {
+	flex: 0 1 75%;
+	margin-right: 0;
+	height: 1025px;
+	position: relative;
+	&__wrapper {
+	}
+
+	&__slide {
+	}
+}
+
+.slide {
+	&__body {
+		position: relative;
+		&:hover {
+			& .slide__name {
+				-webkit-text-stroke: 2px #1f2326;
+				-webkit-text-fill-color: #1f2326;
+			}
+			& .slide__image {
+				background: #fff;
+			}
+			& .slide__info {
+				background: #fff;
+				border-color: #1f2326;
+				.slide-info__item path {
+					fill: #1f2326;
+				}
+			}
+		}
+	}
+
+	&__text {
+		position: absolute;
+		top: 40px;
+		writing-mode: vertical-lr;
+		left: -22px;
+		z-index: 2;
+	}
+
+	&__country {
+		font-family: "Druk Wide";
+		font-style: normal;
+		font-weight: 500;
+		font-size: 24px;
+		line-height: calc(31 / 24 * 100%);
+		letter-spacing: 0.1em;
+		color: #ff4656;
+		margin-left: 15px;
+	}
+
+	&__name {
+		-webkit-text-stroke: 2px #fff;
+		-webkit-text-fill-color: transparent;
+		font-family: "Druk Wide";
+		font-weight: 500;
+		font-size: 72px;
+		line-height: calc(72 / 94 * 100%);
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+		transition: all 0.3s;
+	}
+
+	&__image {
+		position: relative;
+		padding-bottom: 170%;
+		background: #1f2326;
+		border-top-left-radius: 25px;
+		transition: all 0.3s;
+		img {
+			object-position: top;
+		}
+	}
+
+	&__info {
+	}
+}
+
+.slide-info {
+	border: 2px solid #fff;
+	background: #1f2326;
+	min-height: 110px;
+	width: 100%;
+	position: absolute;
+	bottom: -25px;
+	right: -10%;
+	z-index: 2px;
+	display: flex;
+	align-items: center;
+	transition: all 0.3s;
+	&__item {
+		flex: 0 1 25%;
+		color: #fff;
+		display: flex;
+		justify-content: center;
+		img {
+			max-width: 100%;
+		}
+	}
+}
+
+.swiper-slide-active {
+	margin-left: 30px;
+}
